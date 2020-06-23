@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pamela-project0.Library", "pamela-project0.Library\pamela-project0.Library.csproj", "{C7DDDB3D-2CEB-4468-AB80-6707B70A86C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pamela-project0.ConsoleApp", "pamela-project0.ConsoleApp\pamela-project0.ConsoleApp.csproj", "{7D772926-CB4B-49B6-BAB7-D651E67AD009}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7DDDB3D-2CEB-4468-AB80-6707B70A86C5} = {C7DDDB3D-2CEB-4468-AB80-6707B70A86C5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

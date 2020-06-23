@@ -5,16 +5,9 @@ using pamela_project0.Library;
 
 namespace pamela_project0.ConsoleApp
 {
-    //class Program
-    //{
-    //    
-    //}
+
     static class Program
     {
-        // customer has a first and last name and an ID number
-        //public string CustomerFirstName { get; set; }
-        //public string CustomerLastName { get; set; }
-        //public int CustomerID { get; set; } = 100;
 
         static void Main(string[] args)
         {

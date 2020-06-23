@@ -6,4 +6,8 @@
     <RootNamespace>pamela_project0.ConsoleApp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\pamela-project0.Library\pamela-project0.Library.csproj" />
+  </ItemGroup>
+
 </Project>

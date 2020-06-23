@@ -8,11 +8,13 @@ namespace pamela_project0.Library
 {
     public class Customer
     {
-        // customer has a first and last name and an ID number
+        // customer has a first and last name and an ID number and an order history
         public string CustomerFirstName { get; set; }
         public string CustomerLastName { get; set; }
-        //public int CustomerID { get; set; } = 0;
-       
-    
+        public int CustomerID { get; set; } = 0;
+
+        List<int> OrderHistory = new List<int>();
+
     }
+
 }

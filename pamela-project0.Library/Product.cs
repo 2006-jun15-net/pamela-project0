@@ -9,7 +9,9 @@ namespace pamela_project0.Library
         //types of products / details of an order / 
 
         //if customer presses A they go to list of products, etc
-
-        public string TheProduct { get; set; }
+        
+        // the product's ID
+        //public int Id { get; set; }
+        public string TheProducts { get; set; }
     }
 }

@@ -6,20 +6,8 @@ using System.Text;
 
 namespace pamela_project0.ConsoleApp
 {
-    //interface IDataBase
-    //{
 
-    //}
-    // ICustomerSearch<T>
-    //{
-        //DTO.Response FindCustomer(string find);
-    //}
-    //interface IInputCustomer<T>
-    //{
-       // DTO.Response Input(string name);
-    //}
-
-    //public interface IRepository<T> : where T : Customer
+    //public interface IRepository<T> : where T : Customer  //generic repo for classes customer, order, product, etc?
     public interface ICustomerRepository
     {
         string Name { get; }

@@ -7,13 +7,13 @@ using pamela_project0.ConsoleApp;
 
 namespace pamela_project0.Library
 {
-    public class CustomerRepository
+    public class CustomerRepository : ICustomerRepository
     {
-        private readonly ICustomerRepository info;
+        //private readonly ICustomerRepository info;
         
-        public CustomerRepository(ICustomerRepository info)
+        public CustomerRepository(ICustomerRepository db)
         {
-            this.info = info;
+            this.db = db;
         }
 
         //public IEnumerable<Customer> GetCustomers(string search = null)
@@ -36,7 +36,7 @@ namespace pamela_project0.Library
         public void AddCustomer(Customer Name)
         {
         
-            info.Customer.Add(Name);
+            db.Customer.Add(Name);
         }
 
     }

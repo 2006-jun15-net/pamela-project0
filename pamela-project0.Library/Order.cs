@@ -8,7 +8,7 @@ namespace pamela_project0.Library
 {
     public class Order
     {
-        private int? _quantity;
+        private int _quantity;
         private string _customer;
         //private string _location;
         //private string _OrderTime;
@@ -19,7 +19,7 @@ namespace pamela_project0.Library
         // order has to have a customer with name
         public string Customer
         {
-            get => _customer;
+            get => _customer; 
             set
             {
                 if (value.Length == 0)
@@ -33,8 +33,8 @@ namespace pamela_project0.Library
         // an order can have multiple products
         public List<Product> TheProducts { get; set; } = new List<Product>();
 
-        // This reject orders if quantity (number of products in the order) is below 0 or above 5
-        public int? Quantity
+        // This rejects orders if quantity (number of products in the order) is below 0 or above 5: quantity=TheProducts.Count
+        public int Quantity
         {
             get => _quantity;
             set

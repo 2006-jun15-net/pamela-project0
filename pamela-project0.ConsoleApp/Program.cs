@@ -12,25 +12,62 @@ namespace pamela_project0.ConsoleApp
 
         static void Main(string[] args)
         {
-            // customer 
-            Customer numberOne = new Customer
+
+            Console.WriteLine("Welcome to Store Application");
+
+            while (true)
             {
-                CustomerFirstName = "Pamela",
-                CustomerLastName = "Soulis"
-            };
+                Console.WriteLine("a:\tSelect a store location");
+                Console.WriteLine("b:\tPlace an order");
+                Console.WriteLine("Enter \"q\" to exit: ");
+                var input = Console.ReadLine();
+                if (input == "b")
+                {
+                    var customer = new Customer();
+                    while (customer.Name == null)
+                    {
+                        customer = Console.WriteLine("Please enter your name: ");
+                        input = Console.ReadLine();
+                        
+                    }
+                    CustomerRepository.AddCustomer(customer);
+
+                    var order = new Order();
+                    {
+
+                    }
+                    StoreRepository.AddOrder(order, )
+                }
+                else if (input == "q")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid input");
+                }
+            }
+
+
+
+            // customer 
+            //Customer numberOne = new Customer
+            //{
+                //Name = "Pamela Soulis"
+            //};
 
             // order time
             //Order order = new Order();
-            var OrderTime = DateTime.Now;
+            //var OrderTime = DateTime.Now;
 
-            Product FirstProduct = new Product
-            {
-                TheProduct = "Pizza"
-            };
+            //Product FirstProduct = new Product
+            //{
+                //TheProducts = "Shirt and Jeans"
+            //};
 
 
-            Console.WriteLine($"The customer's name is {numberOne.CustomerFirstName} {numberOne.CustomerLastName} \n " +
-                $"and she placed an order for a {FirstProduct.TheProduct} at {OrderTime}");
+            //Console.WriteLine($"The customer's name is {numberOne.Name} \n " +
+                //$"and she placed an order for a {FirstProduct.TheProducts}");
 
         }
 

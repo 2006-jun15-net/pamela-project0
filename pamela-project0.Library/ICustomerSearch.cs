@@ -26,7 +26,7 @@ namespace pamela_project0.ConsoleApp
         List<Order> OrderHistory { get; }
         IEnumerable GetCustomers();
         void InsertCustomer(Customer Name);
-        Customer GetbyName(string name); 
+        Customer GetCustomerbyName(string name); 
 
         
     }

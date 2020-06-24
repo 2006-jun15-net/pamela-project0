@@ -28,15 +28,15 @@ namespace pamela_project0.Library
             //return info.GetCustomers.ToList();
         //}
 
-        public Customer GetCustomerByName(string CustomerName)
-        {
+        //public Customer GetCustomerByName(string CustomerName)
+        //{
 
-            return info.First(r => r.Name == CustomerName);
-        }
-        public void InsertCustomer(Customer Name)
+           // return data.First(r => r.Name == CustomerName); ??
+        //}
+        public void AddCustomer(Customer Name)
         {
-
-            //info.Customer.Add(Name);
+        
+            info.Customer.Add(Name);
         }
 
     }
@@ -44,6 +44,7 @@ namespace pamela_project0.Library
 
     public class StoreRepository 
     {
+        // add to the store's order history
         public void AddOrder(Order order, Store location)
         {
             location.PastOrders.Add(order);
